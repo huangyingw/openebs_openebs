@@ -19,8 +19,10 @@
     merge = refs/heads/master
 [gdif]
     ignore = *.gdio.diff
+    ignore = .kube/config
     ignore = install.sh
     ignore = prerequisites.sh
+    ignore = set_cluster_admin_user_context.sh
     ignore = verify.sh
 [deploy]
 	host = localhost
