@@ -4,5 +4,5 @@ SCRIPTPATH=$(dirname "$SCRIPT")
 cd "$SCRIPTPATH"
 
 apt-get update
-apt-get install open-iscsi
+apt-get install -y open-iscsi
 systemctl enable --now iscsid
