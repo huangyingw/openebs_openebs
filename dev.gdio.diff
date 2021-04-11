@@ -1,5 +1,5 @@
 diff --git a/k8s/demo/jenkins/jenkins.yml b/k8s/demo/jenkins/jenkins.yml
-index 1a861b56..006da1ff 100644
+index 1a861b56..4472f031 100644
 --- ./k8s/demo/jenkins/jenkins.yml
 +++ ./k8s/demo/jenkins/jenkins.yml
 @@ -3,7 +3,7 @@ apiVersion: v1
@@ -7,7 +7,7 @@ index 1a861b56..006da1ff 100644
    name: jenkins-claim
    annotations:
 -    volume.beta.kubernetes.io/storage-class: openebs-jiva-default
-+    volume.beta.kubernetes.io/storage-class: openebs-standalone
++    volume.beta.kubernetes.io/storage-class: openebs-device
  spec:
    accessModes:
      - ReadWriteOnce
